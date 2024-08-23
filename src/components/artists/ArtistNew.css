@@ -1,0 +1,97 @@
+.artist-new-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	text-align: center;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.artist-new-container h2 {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.artist-new-container form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.artist-new-container form div {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	width: 80%;
+}
+
+.artist-new-container label {
+	margin-right: 10px;
+	font-size: 1em;
+	color: white;
+	flex-basis: 20%;
+	text-align: left;
+}
+
+.artist-new-container input[type='text'],
+.artist-new-container textarea {
+	padding: 8px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	outline: none;
+	transition: border-color 0.3s;
+}
+
+.artist-new-container input[type='text']:focus,
+.artist-new-container textarea:focus {
+	border-color: #007bff;
+}
+
+.artist-new-container button {
+	margin-top: 15px;
+	padding: 10px 20px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	background-color: #007bff;
+	transition: background-color 0.3s;
+}
+
+.artist-new-container button:hover {
+	background-color: #0056b3;
+}
+
+.artist-new-container button:last-of-type {
+	background-color: #555555;
+	margin-top: 10px;
+}
+
+.artist-new-container button:last-of-type:hover {
+	background-color: #333333;
+}
+
+.new-artist-button {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	text-align: center;
+	transition: background-color 0.3s;
+}
+
+.new-artist-button:hover {
+	background-color: #0056b3;
+}

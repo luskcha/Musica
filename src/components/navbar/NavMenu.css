@@ -1,0 +1,25 @@
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-item {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+
+.active {
+    background-color: #007BFF; /* Cambia este color según tu tema */
+}
+
+.pending {
+    color: grey; /* Muestra un color diferente cuando la ruta está pendiente */
+}
+
+.transitioning {
+    transition: background-color 0.3s ease;
+}

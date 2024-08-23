@@ -1,0 +1,32 @@
+/* GenresCard.css */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+}
+
+.card:hover {
+    background-color: #425ccf;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-content img {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    width: 24px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: 24px;
+}
+
+.genre-name {
+    font-size: 16px;
+    color: #d6cfcf;
+}

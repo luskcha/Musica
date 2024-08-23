@@ -1,0 +1,48 @@
+.detail {
+    padding: 20px;
+    background-color: inherit;
+}
+
+.detail .card {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(14, 20, 97, 0.397);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.detail .title {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.detail .subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.detail p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;   
+}
+
+.detail button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.detail button:hover {
+    background-color: #0056b3;
+}
