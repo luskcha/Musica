@@ -25,13 +25,13 @@ import AlbumNew from "../components/albums/AlbumNew";
 import AlbumDetail from "../components/albums/AlbumDetail";
 import AlbumEdit from "../components/albums/AlbumEdit";
 
-const Router = createBrowserRouter([
+const AppRouter = createBrowserRouter([
     {
         element: <LayoutSinNav />,
         children: [
             {
                 index: true,
-                element: <Login />,
+                element: <Login />
             },
             {
                 path: "login",
@@ -43,96 +43,96 @@ const Router = createBrowserRouter([
         element: <Layout />,
         children: [
             {
-                path:"home",
-                element: <Home />,
+                path: "home",
+                element: <Home />
             },
             {
                 path: "artists",
                 element: (
-                <ProtectedRoute>
-                    <ArtistsList />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <ArtistsList />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "artists/:id",
                 element: (
-                <ProtectedRoute>
-                    <ArtistIdDetail />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <ArtistIdDetail />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "artists/:id/edit",
                 element: (
-                <ProtectedRoute>
-                    <ArtistEdit />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <ArtistEdit />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "artists/:id/songs",
                 element: (
-                <ProtectedRoute>
-                    <ArtistSongs />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <ArtistSongs />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "artists/new",
                 element: (
-                <ProtectedRoute>
-                    <ArtistNew />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <ArtistNew />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "albums",
                 element: (
-                <ProtectedRoute>
-                    <AlbumsList />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <AlbumsList />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "albums/:id",
                 element: (
-                <ProtectedRoute>
-                    <AlbumDetail />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <AlbumDetail />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "albums/:id/edit",
                 element: (
-                <ProtectedRoute>
-                    <AlbumEdit />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <AlbumEdit />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "albums/new",
                 element: (
-                <ProtectedRoute>
-                    <AlbumNew />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <AlbumNew />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "playlists",
                 element: (
-                <ProtectedRoute>
-                    <Playlists />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <Playlists />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "playlists/:id",
                 element: (
-                <ProtectedRoute>
-                    <PlaylistDetail />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <PlaylistDetail />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "playlists/new",
@@ -140,39 +140,39 @@ const Router = createBrowserRouter([
                     <ProtectedRoute>
                         <PlaylistNew />
                     </ProtectedRoute>
-                ),
+                )
             },
             {
                 path: "genres",
                 element: (
-                <ProtectedRoute>
-                    <GenresLists />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <GenresLists />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "genres/:id",
                 element: (
-                <ProtectedRoute>
-                    <GenresDetail />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <GenresDetail />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "genres/new",
                 element: (
-                <ProtectedRoute>
-                    <GenreNew />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <GenreNew />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "songs",
                 element: (
-                <ProtectedRoute>
-                    <SongsLists />
-                </ProtectedRoute>
-                ),
+                    <ProtectedRoute>
+                        <SongsLists />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "songs/new",
@@ -184,7 +184,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: "profile",
-                children:[
+                children: [
                     {
                         index: true,
                         element: (
@@ -194,18 +194,17 @@ const Router = createBrowserRouter([
                         )
                     },
                     {
-                        path:":id",
+                        path: ":id",
                         element: (
                             <ProtectedRoute>
                                 <Profile />
                             </ProtectedRoute>
                         )
                     }
-
-                ],
+                ]
             },
             {
-                path:"genres",
+                path: "genres",
                 children: [
                     {
                         index: true,
@@ -216,26 +215,24 @@ const Router = createBrowserRouter([
                         )
                     },
                     {
-                        path:"id",
+                        path: ":id",
                         element: (
                             <ProtectedRoute>
                                 <GenresList />
                             </ProtectedRoute>
                         )
                     }
-                ],
-            },
-            // Aqui poner las rutas que falten
-        ],
+                ]
+            }
+        ]
     },
     {
         path: "*",
-        element: <NotFound />,
+        element: <NotFound />
     }
 ],
 {
-	basename: "/PI_CM_grupo12"
-}                                  
-);
+    basename: "/Musica"
+});
 
-export { Router };
+export { AppRouter };

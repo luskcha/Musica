@@ -5,7 +5,7 @@ import NavBar from "../components/navbar/NavBar";
 export default function Layout(){
     return (
         <AuthProvider>
-            <NavBar appName={"PONÉ PLAY"} />
+            <NavBar appName={"MUSICA"} />
             <div>
                 <Outlet />
             </div>
